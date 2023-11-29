@@ -1,0 +1,22 @@
+Working with PL/SQL Libraries and program units in oracle forms
+--------------------------------------------------------------------------------
+Program Units:
+-----------------
+
+Program Units in Oracle Forms are containers for storing PL/SQL code that is specific to a particular form or report.
+They are associated with a specific form or report and are often used to define event triggers, procedures, functions, and other PL/SQL code that is unique to that particular module.
+Program Units are typically used for implementing business logic and behavior specific to a particular form or report.
+The PL/SQL code within a Program Unit is tightly coupled with the form or report it belongs to and is not easily reusable in other modules.
+
+PL/SQL Libraries:
+----------------------
+
+PL/SQL Libraries, on the other hand, are reusable units of PL/SQL code that can be shared across multiple forms and reports within an Oracle Forms application.
+They are created separately from forms and reports and can be associated with multiple modules.
+PL/SQL Libraries are typically used for storing common business logic, utility functions, and other code that can be shared across different forms and reports.
+Code within a PL/SQL Library is encapsulated, making it easier to maintain and update. Changes made to the library are automatically reflected in all modules that use it.
+
+In summary, Program Units are specific to a single form or report and are used to encapsulate code that is unique to that module, while PL/SQL Libraries are reusable across multiple modules and are used for storing common code that can be shared. PL/SQL Libraries promote code reuse and maintainability, making them a more efficient choice when you have common functionality that needs to be shared across different parts of your Oracle Forms application.
+
+once the plsql libraries are created we are attached with the libraries using Attach Libraries options.
+

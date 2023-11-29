@@ -1,0 +1,24 @@
+create the table in database:
+
+CREATE TABLE DILIP_ACCOUNTS
+(
+NAME VARCHAR2(25),
+AC_NUMBER NUMBER(15),
+BALANCE NUMBER(8),
+AC_TYPE VARCHAR2(10) 
+);
+
+ALTER TABLE DILIP_ACCOUNTS ADD CONSTRAINTS DILIP_ACCOUNTS_PK PRIMARY KEY (AC_NUMBER) ;
+
+create a  data block for this table in oracle forms and create a record group for account type and create a three radio buttons namely 
+savings,current,recurrings.
+
+create a trigger button WHEN-RADIO-CHANGED and write the below code
+
+IF :AC_TYPE = 'SAVINGS' AND :BALANCE < 1000 THEN
+    MESSAGE('MIN BALANCE MUST BE 1000');
+ELSIF :AC_TYPE = 'CURRENT' AND :BALANCE < 10000 THEN
+    MESSAGE('MIN BALANCE MUST BE 10000');
+ELSIF :AC_TYPE = 'RECURRING' AND :BALANCE < 5000 THEN
+    MESSAGE('MIN BALANCE MUST BE 5000');
+END IF;
