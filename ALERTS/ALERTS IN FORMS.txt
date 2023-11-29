@@ -1,0 +1,26 @@
+How to use alert message in D2K forms?
+login details are correct then allow user to login, login id and password is not correct display the message as 
+'INVAILD USER NAME AND PASSWORD TRY AGAIN' .
+
+1.Create text field for user name and password
+2. create 2 push buttons for ok and cancel
+3. create ALERT using ALERT option in the form page.
+Create alert->property pallete->Message option ->write this
+'INVAILD USER NAME AND PASSWORD TRY AGAIN' .
+4.write  a plsql code for ok button plsql edtior , trigger name called when button pressed and wirte a below source code.
+
+DECLARE
+X NUMBER;
+BEGIN
+IF :T1 = 'DILIP' AND :T2 = 'ORCL' THEN
+NEXT_BLOCK;
+ELSE
+X := SHOW_ALERT('ALERT18');
+IF X = ALERT_BUTTON1 THEN
+CLEAR_BLOCK;
+END IF;
+END IF;
+END;
+
+5.compile the  form application
+6.Run the form application.

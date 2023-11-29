@@ -1,0 +1,27 @@
+WORKING WITH MENUS IN ORACLE FORMS
+--------------------------------------------------------------
+
+1.Create a new menu in  oracle forms using Menus option
+2.Next goto Tools->Menu Editor
+3.to create a menu and sub menu and write a code for plsql editor for each menu options.
+
+CLEAR_BLOCK;
+NEXT_BLOCK;
+PREVIOUS_BLOCK;
+
+INSERT_RECORD;
+UPDATE_RECORD;
+DELETE_RECORD;
+
+COMMIT;
+EXIT_FORM;
+
+4.to save the menu in ex2.
+5.to create a data block for emp table and link with the menu in forms.(forms are different and menus are different).
+we can't save the form and menus in  a one file. 
+6. goto oracle forms builder 	Forms->right click -> property pallete -> Menu module set the path of the menu forms.
+
+D:\oracle forms Dilip 11G\MENUS\EX2.MMB		
+
+7. Compile the form using CTRL+T.
+8. Run the form using CTRL+R.

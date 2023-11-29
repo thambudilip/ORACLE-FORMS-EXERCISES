@@ -1,0 +1,115 @@
+CREATE TABLE ISF_PERSONAL_DETAILS(
+ID_Type VARCHAR2(50),
+CUST_ID_NO VARCHAR2(50),
+Title VARCHAR2(50), 
+First_Name VARCHAR2(50),
+Last_Name VARCHAR2(50),
+DOB DATE,
+Gender VARCHAR2(50),
+Height  NUMBER(6,2),
+Weight NUMBER(6,2),
+BMI NUMBER(6,2),
+Nationality VARCHAR2(50),
+Occupation VARCHAR2(50),
+Annual_sal NUMBER(8,3)
+) ;
+
+
+CREATE TABLE  ISF_CONTACT_DETAILS(
+CUST_ID_NO VARCHAR2(50),
+Phone_No NUMBER(13),
+Email_Id VARCHAR2(50),
+House_No VARCHAR2(10),
+Land_Mark VARCHAR2(50),
+Area VARCHAR2(50),
+District VARCHAR2(50),
+State VARCHAR2(50),
+Pincode NUMBER(6)
+);
+
+
+CREATE TABLE ISF_UNDERWRITNG(
+CUST_ID_NO VARCHAR2(50),
+smoker VARCHAR2(10),
+alcoholic VARCHAR2(10),
+Diabates  VARCHAR2(10),
+heart_disease  VARCHAR2(10)
+ID
+);
+
+
+create table  ISF_DOCUMENT ( CUST_ID_No VARCHAR2(50),photo blob, aadhar_photo blob, income_certificate blob, signature blob,CUST_ID NUMBER);
+
+ CREATE TABLE ISF_BANK_DETAILS
+(
+CUST_ID_NO VARCHAR2(50),
+BANK_NAME            VARCHAR2(70) ,
+ACCOUNT_NUMBER       NUMBER(16)  , 
+IFSC_CODE            NUMBER(10)  , 
+PAYMENT_METHOD       VARCHAR2(20)
+);
+
+
+
+Personal Details :
+
+ID Type :
+ID No :
+First Name :
+Last Name :
+DOB :
+Gender :
+Ttile :
+Height :
+Weight :
+Nationality :
+BMI :
+Occupation :
+
+Contact Details :
+
+Phone No :
+Email Id :
+Address (Resident/office) :
+Resident :
+House No :
+Land Mark :
+Area :
+District :
+State :
+Pincode :
+
+ Under Writing :
+
+Are you a smoker ?
+Are you a alcoholic?
+Are you a person suffering from Diabates ?
+Are you Diagnosed with heart disease ?
+
+Document :
+
+Upload a photograph ?
+ Upload Aadhar Card 
+Upload Income certificate
+Upload  signature :
+
+Payment :
+
+Debit and Credit cards :
+UPI :
+Net Banking :
+
+
+
+https://www.appsloveworld.com/oracle/100/142/oracle-form-11g-12c-with-next-and-previous-button
+
+https://www.appsloveworld.com/oracle/100/142/oracle-form-11g-12c-with-next-and-previous-button#google_vignette
+
+
+https://holowczak.com/oracle9i-developer-suite-forms-and-reports-tutorial/23/
+
+
+GO_TAB_PAGE('DeptTabPage');
+    GO_ITEM('DEPT_TAB_PAGE');
+
+

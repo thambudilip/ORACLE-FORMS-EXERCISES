@@ -1,0 +1,24 @@
+check box in oracle forms
+--------------------------------
+
+Oracle Forms, a checkbox is typically implemented using a graphical user interface element known as a "Check Box Item." A Check Box Item is a user interface control that allows users to select or deselect a choice by clicking a small box.
+
+Creating a check box on oracle forms
+
+1. create  a data block for emp table.
+2. create a textbox for annualsal and set data base item as No in the property pallete.
+3. create one check box name as tax and and set data base item as No in the property pallete.
+assign 1 for Value When Checked
+assign 0  for Value When Un-Checked in the property pallete for a check box.
+4. Write the below source code in the plsql editor for check box
+ select a trigger name as WHEN -CHECKBOX - CHANGED.
+DECLARE
+	X NUMBER;
+BEGIN
+	X := ( :SAL + NVL(:COMM,0))*12;
+	IF :TAX = 1 THEN
+		:ANNSAL := X - (X*0.1) ;
+	ELSE
+		:ANNSAL := X;
+	END IF;
+	END; 

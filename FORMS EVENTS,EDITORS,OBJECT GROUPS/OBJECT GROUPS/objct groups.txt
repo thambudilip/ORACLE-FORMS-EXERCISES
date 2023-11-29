@@ -1,0 +1,23 @@
+Forms Object Groups
+--------------------------
+
+It is collection of controls. (Blocks, Canvas, Windows, Alerts, Editors, Visual Attributes, Property classes).
+
+Used to share components with other modules ( forms) .
+
+Difference between object groups and object libraries. .
+
+
+Object Groups:
+----------------
+ These are collections of form objects (blocks, items, triggers) that are treated as a single unit within a form. Object Groups are used to organize and manage related objects in a form.
+Used for organizing and managing objects within a form to enhance form structure and maintainability.
+ Form-specific and are part of the .fmb (Form Module Binary) file.
+
+Object libraries :
+------------------
+
+These are files (.OLB) containing reusable objects such as program units, triggers, blocks, canvases, and items. Object Libraries provide a way to share and reuse code and design elements across multiple forms.
+ Used for sharing and reusing code and design elements across multiple forms to improve development efficiency and consistency.
+Stored as separate .OLB (Object Library) files that can be shared and referenced by multiple forms. 
+
